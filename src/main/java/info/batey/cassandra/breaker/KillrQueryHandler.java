@@ -19,11 +19,10 @@ public class KillrQueryHandler implements QueryHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KillrQueryHandler.class);
 
-    private final PrimingServer primingServer;
     private QueryHandler realQueryHandler = QueryProcessor.instance;
 
     public KillrQueryHandler() {
-        primingServer = new PrimingServer();
+        PrimingServer primingServer = new PrimingServer();
         primingServer.start();
     }
 

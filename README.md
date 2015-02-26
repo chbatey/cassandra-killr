@@ -8,7 +8,7 @@ To build:
 
 This will build the following file:
 
-```target/cassandra-killr-1.0-SNAPSHOT.jar```
+```cassandra-killr-1.0-SNAPSHOT.jar```
 
 Add this to your Cassandra node classpath e.g put it in the lib directory.
 
