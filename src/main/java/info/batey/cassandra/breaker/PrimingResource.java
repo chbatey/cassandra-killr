@@ -16,7 +16,7 @@ public class PrimingResource {
     }
 
     @POST
-    @Path("success")
+    @Path("reset")
     @Produces(MediaType.APPLICATION_JSON)
     public void success() {
         PrimingServer.setReadtimeout(false);
