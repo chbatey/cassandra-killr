@@ -15,14 +15,14 @@ import org.slf4j.LoggerFactory;
 /**
  * Decorator around the real query handler that does crazy things.
  */
-public class CrazyQueryHandler implements QueryHandler {
+public class KillrQueryHandler implements QueryHandler {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CrazyQueryHandler.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(KillrQueryHandler.class);
 
     private final PrimingServer primingServer;
     private QueryHandler realQueryHandler = QueryProcessor.instance;
 
-    public CrazyQueryHandler() {
+    public KillrQueryHandler() {
         primingServer = new PrimingServer();
         primingServer.start();
     }
